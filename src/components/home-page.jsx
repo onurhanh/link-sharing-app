@@ -45,8 +45,8 @@ export default function HomePage() {
     return (
         <div className="grid grid-cols-12">
             <div className="col-span-6">
-                <h1>Furkan Özay</h1>
-                <p>furkanczay@gmail.com</p>
+                <h1>Onur Han Hacımustafaoğlu</h1>
+                <p>onurhanhacimustafaoglu@gmail.com</p>
                 <ul>
                     {links.map(link => {
                         const linkPlatform = platforms.find(x => x.key == link.platform);
