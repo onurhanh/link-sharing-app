@@ -1,4 +1,4 @@
-import Sidebar from './assets/components/sidebar'
+import Sidebar from './components/sidebar'
 
 function App() {
 
