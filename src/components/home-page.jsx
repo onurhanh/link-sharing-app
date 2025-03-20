@@ -43,7 +43,7 @@ export default function HomePage() {
         
     }, [links])
     return (
-        <div className="grid grid-cols-6 xl:grid-cols-12 ml-4 mr-4">
+        <div className="grid grid-cols-6 xl:grid-cols-12 ml-4 mr-4 mb-[32px]">
             <div className="col-span-5 hidden xl:flex xl:bg-[#FFFFFF] xl:p-[24px] xl:mr-[10px] xl:ml-[8px] xl:mt-[16px] xl:mb-[24px]  xl:rounded-lg">
                 <img className="hidden xl:flex xl:w-[307px] xl:h-[631px] xl:mx-auto xl:mt-[40px]" src="/images/phone.svg" alt="" />
                 <ul>
