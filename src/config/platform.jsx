@@ -1,4 +1,4 @@
-import { FaGithub, FaYoutube } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa6";
 
 export const platforms = [
     {
@@ -14,5 +14,13 @@ export const platforms = [
         key: "youtube",
         bgColor: "red",
         textColor: "white"
+    },
+    {
+        Icon: FaLinkedin,
+        label: "LinkedIn",
+        key: "linkedin",
+        bgColor: "blue",
+        textColor: "white"
     }
+
 ]

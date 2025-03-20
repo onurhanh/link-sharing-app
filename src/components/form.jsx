@@ -1,12 +1,14 @@
+import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa6";
+
 export default function LinkFormCard({ link, onChange, handleDelete }) {
 
     
     return (
-        <div className="max-w-md mx-auto p-6 bg-[#FAFAFA] shadow-md rounded-lg mt-10">
+        <div className="max-w-md mx-auto p-6 bg-[#FAFAFA] shadow-md rounded-lg mt-10 md:max-w-screen md:ml-[40px] md:mr-[40px]">
             <form>
-                <div className="p-4 shadow-sm relative">
+                <div className="pr-[20px] pl-[20px] relative">
                     <div className="flex justify-between items-center mb-2">
-                        <span className="font-bold text-[#737373]">=Link #</span>
+                        <span className="font-bold text-[#737373]">= Link #{link.id}</span>
                         <button onClick={handleDelete} id={link.id} type="button" className="text-[#737373] font-normal">
                             Remove
                         </button>
@@ -16,9 +18,9 @@ export default function LinkFormCard({ link, onChange, handleDelete }) {
                         <div className="relative">
                             <select defaultValue={link.platform} id={link.id} name="platform" onChange={onChange} className="w-full p-2 border-[#D9D9D9] border-1 rounded-md appearance-none bg-white">
                                 <option value="">Select a platform</option>
-                                <option value="github"> GitHub</option>
-                                <option value="youtube">YouTube</option>
-                                <option value="linkedin">LinkedIn</option>
+                                <option value="github"><FaGithub /> GitHub</option>
+                                <option value="youtube"><FaYoutube /> YouTube</option>
+                                <option value="linkedin"><FaLinkedin/> LinkedIn</option>
                             </select>
                         </div>
                     </div>
