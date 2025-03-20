@@ -45,7 +45,7 @@ export default function HomePage() {
     return (
         <div className="grid grid-cols-6 xl:grid-cols-12 ml-4 mr-4">
             <div className="col-span-5 hidden xl:flex xl:bg-[#FFFFFF] xl:p-[24px] xl:mr-[10px] xl:ml-[8px] xl:mt-[16px] xl:mb-[24px]  xl:rounded-lg">
-                <img className="hidden xl:flex xl:w-[307px] xl:h-[631px] xl:mx-auto xl:mt-[40px]" src="public/images/phone.svg" alt="" />
+                <img className="hidden xl:flex xl:w-[307px] xl:h-[631px] xl:mx-auto xl:mt-[40px]" src="/images/phone.svg" alt="" />
                 <ul>
                     {links.map(link => {
                         const linkPlatform = platforms.find(x => x.key == link.platform);
@@ -87,7 +87,7 @@ export default function HomePage() {
             {links.length === 0 ?(
                 <div className="ml-5 mr-5 md:ml-[40px] md:mr-[40px] pl-[20px] pt-[46px] pr-[20px] pb-[46px] mt-6 gap-6 bg-[#FAFAFA] flex flex-col rounded-lg">
                     <div className="flex justify-center ">
-                        <img className="md:w-3xs" src="public/images/content-img.svg" alt="" />
+                        <img className="md:w-3xs" src="/images/content-img.svg" alt="" />
                     </div>
                     <div className="flex justify-center font-bold text-xl md:ml-[76px] md:mr-[76px]">
                         <h1 className="text-3xl text-nowrap">Let’s get you started</h1>
