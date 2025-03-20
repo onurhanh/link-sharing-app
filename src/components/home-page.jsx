@@ -83,7 +83,7 @@ export default function HomePage() {
                     }} className="text-[#633CFF] text-l rounded-lg pr-[93.5px] pl-[93.5px] pt-[11px] pb-[11px] border border-solid border-[#633CFF] text-nowrap md:w-screen hover:bg-[#EFEBFF] hover:text-[#633CFF]">+ Add new link</button>
                 </div>
             </div>
-            <div className="overflow-y-auto md:h-[500px] xl:h-[500px]">
+            <div className="overflow-y-auto h-[400px] md:h-[500px] xl:h-[500px]">
             {links.length === 0 ?(
                 <div className="ml-5 mr-5 md:ml-[40px] md:mr-[40px] pl-[20px] pt-[46px] pr-[20px] pb-[46px] mt-6 gap-6 bg-[#FAFAFA] flex flex-col rounded-lg">
                     <div className="flex justify-center ">
