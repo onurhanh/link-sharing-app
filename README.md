@@ -1,4 +1,4 @@
-🌍 Link Sharing Website
+🌍 Link Sharing Demo
 
 Bu proje, React kullanılarak geliştirilen dinamik ve responsive bir link paylaşım web sitesidir. Kullanıcı dostu arayüzüyle bağlantılarınızı kolayca paylaşabilir ve yönetebilirsiniz.
 
