@@ -75,7 +75,7 @@ export default function HomePage() {
                 <div className="col-span-7 md:ml-[9px] md:mr-[9px] xl:m-[24px]">
                     <div className="bg-[#FFFFFF] rounded-lg">
                         <div className="p-5 m-4 xl:m-0 md:ml-[24px] xl:mr-0 md:mr-[24px]">
-                            <div className="mb-2 xl:m-[40px]">
+                            <div className="mb-2 md:mb-[40px] flex flex-col gap-[8px] xl:m-[40px]">
                                 <h1 className="font-bold text-2xl xl:mb-[8px]">Customize your links</h1>
                                 <p className="text-[#737373] text-base">Add/edit/remove links below and then share all your profiles with the world!</p>
                             </div>
