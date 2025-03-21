@@ -20,7 +20,7 @@ export default function HomePage() {
 
     const handleChange = (e) => {
         const changeLink = links.find(link => link.id == e.target.id)
-        
+        const { id, name, value } = e.target;
 
 
         const excludeLinks = links.filter(link => link.id != e.target.id);
@@ -30,10 +30,11 @@ export default function HomePage() {
             [e.target.name]: e.target.value
         }
         
-        setLinks([
-            ...excludeLinks,
-            newObj
-        ])
+        setLinks(prevLinks =>
+            prevLinks.map(link =>
+                link.id == id ? { ...link, [name]: value } : link
+            )
+        );
     }
 
 
@@ -80,15 +81,18 @@ export default function HomePage() {
                 </div>
                 <div className="flex justify-center">
                     <button onClick={() => {
-                        setLinks([
-                            ...links,
-                            {
-                                id: links.length > 0 ? links[links.length - 1].id + 1 : 1,
-                                platform: "",
-                                link: ""
-                            }
-                        ])
-                    }} className="text-[#633CFF] text-l rounded-lg pr-[93.5px] pl-[93.5px] pt-[11px] pb-[11px] border border-solid border-[#633CFF] text-nowrap md:w-screen hover:bg-[#EFEBFF] hover:text-[#633CFF]">+ Add new link</button>
+            if (links.length < 5) { // Maksimum 5 link eklenebilir
+            setLinks(prevLinks => [
+                ...prevLinks,
+                {
+                    id: prevLinks.length > 0 ? prevLinks[prevLinks.length - 1].id + 1 : 1,
+                    platform: "",
+                    link: ""
+                }
+            ]);
+        }
+    }} 
+    disabled={links.length >= 5} className="text-[#633CFF] text-l rounded-lg pr-[93.5px] pl-[93.5px] pt-[11px] pb-[11px] border border-solid border-[#633CFF] text-nowrap md:w-screen hover:bg-[#EFEBFF] hover:text-[#633CFF]">+ Add new link</button>
                 </div>
             </div>
             <div className="overflow-y-auto h-[400px] md:h-[500px] xl:h-[500px]">
