@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import LinkFormCard from "./form";
 import SaveBtn from "./save-btn";
 import { platforms } from "../config/platform";
+import Sidebar from "./sidebar";
 
 export default function HomePage() {
     const [links, setLinks] = useState(localStorage.getItem("links") ? JSON.parse(localStorage.getItem("links")) : []);
@@ -43,14 +44,17 @@ export default function HomePage() {
         
     }, [links])
     return (
+        <>
+        <Sidebar />
         <div className="grid grid-cols-6 xl:grid-cols-12 ml-4 mr-4 mb-[32px]">
-            <div className="col-span-5 hidden xl:flex xl:bg-[#FFFFFF] xl:p-[24px] xl:mr-[10px] xl:ml-[8px] xl:mt-[16px] xl:mb-[24px]  xl:rounded-lg">
-                <img className="hidden xl:flex xl:w-[307px] xl:h-[631px] xl:mx-auto xl:mt-[40px]" src="/images/phone.svg" alt="" />
+
+            <div className="relative col-span-5 hidden xl:flex xl:bg-[#FFFFFF] xl:p-[24px] xl:mr-[10px] xl:ml-[8px] xl:mt-[16px] xl:mb-[24px]  xl:rounded-lg">
+                <img className="hidden relative xl:flex xl:w-[307px] xl:h-[631px] xl:mx-auto xl:mt-[40px]" src="/images/phone.svg" alt="" />
                 <ul>
                     {links.map(link => {
                         const linkPlatform = platforms.find(x => x.key == link.platform);
                         return(
-                            <li className="flex items-center gap-1 p-2 w-full" style={{
+                            <li className="absolute flex items-center rounded-lg gap-1 p-2 w-[237px] h-[44px] top-85 start-42 " style={{
                                 backgroundColor: linkPlatform?.bgColor,
                                 color: linkPlatform?.textColor
                             }} key={link.id}>
@@ -114,5 +118,6 @@ export default function HomePage() {
 
             </div>
         </div>
+        </>
     )
 }
