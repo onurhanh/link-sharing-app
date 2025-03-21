@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ProfileDetails from "./components/profile-details"; // 🛠 Profile Details sayfasını ekledik
+import ProfileDetails from "./components/profile-details"; 
 import HomePage from "./components/home-page";
 
 function App() {

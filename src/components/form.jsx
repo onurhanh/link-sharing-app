@@ -4,7 +4,7 @@ export default function LinkFormCard({ link, onChange, handleDelete }) {
 
     
     return (
-        <div className="max-w-md mx-auto p-6 bg-[#FAFAFA] shadow-md rounded-lg mt-10 md:max-w-screen md:ml-[40px] md:mr-[40px]">
+        <div className="max-w-md mx-auto p-6 bg-[#FAFAFA] shadow-md rounded-lg mt-10 xl:mt-[0px] md:max-w-screen md:ml-[23px] md:mr-[23px]">
             <form>
                 <div className="pr-[20px] pl-[20px] relative">
                     <div className="flex justify-between items-center mb-2">

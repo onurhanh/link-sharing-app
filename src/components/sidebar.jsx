@@ -5,14 +5,14 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 export default function Sidebar() {
     const navigate = useNavigate();
-    const location = useLocation(); // 🛠 Şu anki sayfanın yolunu al
-    const activeButton = location.pathname === "/profile-details" ? "user" : "link"; // 🛠 Aktif butonu URL'ye göre belirle
+    const location = useLocation(); 
+    const activeButton = location.pathname === "/profile-details" ? "user" : "link";
 
     const handleClick = (buttonName) => {
         if (buttonName === "user") {
-            navigate("/profile-details"); // 🛠 Profile Details sayfasına git
+            navigate("/profile-details"); 
         } else {
-            navigate("/"); // 🛠 Anasayfaya git
+            navigate("/"); 
         }
     };
 

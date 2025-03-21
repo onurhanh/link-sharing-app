@@ -6,21 +6,21 @@ export const platforms = [
         label: "Github",
         key: "github",
         bgColor: "#2b2b2b",
-        textColor: "#fff"
+        textColor: "#fff",
     },
     {
         Icon: FaYoutube,
         label: "Youtube",
         key: "youtube",
         bgColor: "red",
-        textColor: "white"
+        textColor: "white",
     },
     {
         Icon: FaLinkedin,
         label: "LinkedIn",
         key: "linkedin",
         bgColor: "blue",
-        textColor: "white"
+        textColor: "white",
     }
 
 ]
