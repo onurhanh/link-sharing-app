@@ -56,7 +56,7 @@ export default function HomePage() {
                     {links.map(link => {
                         const linkPlatform = platforms.find(x => x.key == link.platform);
                         return(
-                            <div className="flex w-full h-full mb-[16px] items-center rounded-lg gap-1 p-2 " style={{
+                            <div className="flex cursor-pointer w-full h-full mb-[16px] items-center rounded-lg gap-1 p-2 " style={{
                                 backgroundColor: linkPlatform?.bgColor,
                                 color: linkPlatform?.textColor
                             }} key={link.id}>

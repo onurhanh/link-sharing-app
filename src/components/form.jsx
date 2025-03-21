@@ -32,6 +32,13 @@ export default function LinkFormCard({ link, onChange, handleDelete }) {
                                 type="url"
                                 className="block w-full p-2 border-[#D9D9D9] border-1 rounded-md mb-1 text-[#333333]"
                             />
+                            {link.link && (
+                                <a 
+                                href={link.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                ></a>
+                            )}
                         </div>
                     </div>
                 </div>
