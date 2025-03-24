@@ -1,9 +1,9 @@
 import { FaRightLong } from "react-icons/fa6";
 import { platforms } from "../config/platform";
 import { useLinks } from "../hooks/use-links";
+import { useEffect } from "react";
 
-export default function PreviewCard({ user }) {
-    const { links } = useLinks();
+export default function PreviewCard({ user, links }) {
     return (
         <div className="col-span-5 hidden xl:block bg-white">
             <div className="px-20">
