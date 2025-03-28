@@ -80,7 +80,7 @@ export default function ProfileDetails() {
                             </div>
                         </form>
                     </div>
-                    <div className="border border-solid flex justify-start mt-6 border-[#D9D9D9]"></div>
+                    <div className="border-b flex justify-start mt-6 border-[#D9D9D9]"></div>
                     <div>
                         <SaveBtn formRef={formRef} />
                     </div>

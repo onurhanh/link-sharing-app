@@ -5,7 +5,7 @@ export default function SaveBtn({ formRef }) {
                 onClick={() => {
                     formRef.current.requestSubmit();
                 }}
-                className="bg-[#633CFF] rounded-lg text-white pt-[11px] pb-[11px] pr-[137px] pl-[137px] md:pr-[27px] md:flex md:pl-[27px] hover:text-[#633CFF] hover:bg-[#EFEBFF] hover:border hover:font-bold hover:border-[#633CFF]"
+                className="bg-[#633CFF] mb-5 rounded-lg text-white pt-[11px] pb-[11px] pr-[137px] pl-[137px] md:pr-[27px] md:flex md:pl-[27px] hover:text-[#633CFF] hover:bg-[#EFEBFF] hover:border hover:font-bold hover:border-[#633CFF]"
             >
                 Save
             </button>
